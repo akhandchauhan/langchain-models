@@ -1,0 +1,9 @@
+from langchain_anthropic import ChatAnthropic
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatAnthropic(model = 'Claude-3-5-sonnet')
+
+print(model.invoke("What is India"))
+
